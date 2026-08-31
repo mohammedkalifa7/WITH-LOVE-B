@@ -1,0 +1,619 @@
+   <!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>For F. Bhibisha Jasmine 💚</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- FLOATING HEARTS -->
+
+    <div id="hearts"></div>
+
+
+    <!-- PAGE 1 : WELCOME -->
+
+    <section class="page active" id="page1">
+
+        <div class="welcome-content">
+
+            <div class="small-heart">💚</div>
+
+            <p class="small-title">
+                SOMETHING SPECIAL FOR
+            </p>
+
+            <h1>
+                F. Bhibisha
+                <span>Jasmine 💚</span>
+            </h1>
+
+            <p class="welcome-text">
+                I made a small world just for you.
+                There are memories, games, questions,
+                surprises and something waiting at the end.
+            </p>
+
+            <button class="main-btn"
+                onclick="nextPage(2)">
+
+                Start Our Story 💚
+
+            </button>
+
+            <p class="hint">
+                Click the button and enter our world ✨
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PAGE 2 : MEMORIES -->
+
+    <section class="page" id="page2">
+
+        <div class="page-content">
+
+            <p class="small-title">
+                CHAPTER 01
+            </p>
+
+            <h2>
+                Our Beautiful
+                <span>Memories 📸</span>
+            </h2>
+
+            <p class="page-description">
+                Every picture has a memory.
+                Every memory has a special place in my heart.
+            </p>
+
+
+            <!-- PHOTO GALLERY -->
+
+            <div class="photo-gallery">
+
+
+                <!-- PUT PHOTO 1 -->
+
+                <div class="photo-card big">
+
+                    <img src="photo3.jpeg" alt="Our Photo">
+
+                    <div class="photo-text">
+                        💚 Our First Memory
+                    </div>
+
+                </div>
+
+
+                <!-- PUT PHOTO 2 -->
+
+                <div class="photo-card">
+
+                    <img src="photo2.jpeg"
+                        alt="Our Memory">
+
+                    <div class="photo-text">
+                        ✨ Beautiful Moment
+                    </div>
+
+                </div>
+
+
+                <!-- PUT PHOTO 3 -->
+
+                <div class="photo-card">
+
+                    <img src="photo4.jpeg"
+                        alt="Our Memory">
+
+                    <div class="photo-text">
+                        🥰 My Favourite
+                    </div>
+
+                </div>
+
+
+                <!-- PUT PHOTO 4 -->
+
+                <div class="photo-card">
+
+                    <img src="Photo1.JPEG"
+                        alt="Our Memory">
+
+                    <div class="photo-text">
+                        💕 Together
+                    </div>
+
+                </div>
+
+
+                <!-- PUT PHOTO 5 -->
+
+                <div class="photo-card">
+
+                    <img src="photo6.jpeg"
+                        alt="Our Memory">
+
+                    <div class="photo-text">
+                        🌸 Special Day
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="navigation-buttons">
+
+                <button class="back-btn"
+                    onclick="nextPage(1)">
+
+                    ← Back
+
+                </button>
+
+                <button class="main-btn"
+                    onclick="nextPage(3)">
+
+                    Next Surprise →
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PAGE 3 : GAME -->
+
+    <section class="page" id="page3">
+
+        <div class="page-content center">
+
+            <p class="small-title">
+                CHAPTER 02
+            </p>
+
+            <h2>
+                Catch My
+                <span>Heart 💚</span>
+            </h2>
+
+            <p class="page-description">
+                Catch the heart 10 times to unlock
+                the next part of our story.
+            </p>
+
+
+            <div class="score-box">
+
+                Score:
+                <span id="score">0</span> / 10
+
+            </div>
+
+
+            <div id="gameArea">
+
+                <button id="heartButton">
+                    💚
+                </button>
+
+            </div>
+
+
+            <p id="gameMessage"></p>
+
+
+            <div class="navigation-buttons">
+
+                <button class="back-btn"
+                    onclick="nextPage(2)">
+
+                    ← Back
+
+                </button>
+
+                <button id="gameNext"
+                    class="main-btn disabled"
+                    onclick="nextPage(4)">
+
+                    Continue →
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PAGE 4 : QUIZ -->
+
+    <section class="page" id="page4">
+
+        <div class="page-content center">
+
+            <p class="small-title">
+                CHAPTER 03
+            </p>
+
+            <h2>
+                How Well Do You
+                <span>Know Us? 🥰</span>
+            </h2>
+
+
+            <div class="quiz-box">
+
+                <p id="questionNumber">
+                    Question 1 of 3
+                </p>
+
+                <h3 id="question">
+                    Which one would you choose
+                    for our dream date?
+                </h3>
+
+
+                <div id="answers"
+                    class="answers">
+
+                    <button onclick="answerQuestion(0)">
+                        🌊 Beach
+                    </button>
+
+                    <button onclick="answerQuestion(1)">
+                        ⛰️ Mountains
+                    </button>
+
+                    <button onclick="answerQuestion(2)">
+                        🍕 Food Date
+                    </button>
+
+                    <button onclick="answerQuestion(3)">
+                        💚 Anywhere Together
+                    </button>
+
+                </div>
+
+
+                <p id="quizMessage"></p>
+
+            </div>
+
+
+            <div class="navigation-buttons">
+
+                <button class="back-btn"
+                    onclick="nextPage(3)">
+
+                    ← Back
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PAGE 5 : LOVE LETTERS -->
+     <!-- PAGE 5 : SOMETHING FROM MY HEART -->
+
+<section class="page" id="page5">
+
+    <div class="page-content center">
+
+        <p class="small-title">
+            SOMETHING FROM MY HEART 💚
+        </p>
+
+        <h2>
+            I Want To Say
+            <span>Sorry 🥺💚</span>
+        </h2>
+
+        <div class="sorry-box">
+
+            <div class="sorry-emoji">🥺💚</div>
+
+            <h3>Hey F. Bhibisha Jasmine 💚</h3>
+
+            <p>
+                I know sometimes I may hurt you without realizing it.
+                Sometimes I may say something wrong, reply late,
+                make you feel ignored, or fail to understand your feelings.
+            </p>
+
+            <p class="sorry-highlight">
+                For all those moments, I am truly sorry. 🥺💚
+            </p>
+
+            <p>
+                I may not be perfect, but one thing I want you to know is that
+                <strong>you are very important to me.</strong>
+            </p>
+
+            <div class="sorry-list">
+
+                <p>Sorry for every tear. 🥺</p>
+                <p>Sorry for every misunderstanding. 💔</p>
+                <p>Sorry for every time I hurt you. 💚</p>
+                <p>Sorry for every moment I made you feel less important. 🥹</p>
+
+            </div>
+
+            <p>
+                I don't want to lose the beautiful bond we have. 🥹💚
+            </p>
+
+            <p>
+                Please forgive me if you can. I will always try to become
+                better — not just with words, but with my actions too. 💚
+            </p>
+
+            <button class="main-btn" onclick="showForgiveMessage()">
+    Can You Forgive Me? 🥺💚
+</button>
+
+<p id="forgiveMessage" class="hidden forgive-message">
+    🥰
+</p>
+
+                Thank you for giving my heart another chance. 🥹💚
+                <br><br>
+                I promise to listen, understand and always try to be better. 💚
+            </p>
+
+        </div>
+
+        <div class="navigation-buttons">
+
+            <button class="back-btn"
+                onclick="nextPage(4)">
+                ← Back
+            </button>
+
+            <button class="main-btn"
+                onclick="nextPage(6)">
+                Continue Our Story →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- PAGE 5 : LOVE LETTERS -->
+
+    <section class="page" id="page6">
+
+        <div class="page-content center">
+
+            <p class="small-title">
+                CHAPTER 04
+            </p>
+
+            <h2>
+                Letters For
+                <span>You 💌</span>
+            </h2>
+
+            <p class="page-description">
+                Choose any letter and open it.
+            </p>
+
+
+            <div class="letters-container">
+
+                <div class="letter"
+                    onclick="openLetter(1)">
+
+                    💌
+
+                    <p>
+                        When You Are Happy
+                    </p>
+
+                </div>
+
+
+                <div class="letter"
+                    onclick="openLetter(2)">
+
+                    💌
+
+                    <p>
+                        When You Miss Me
+                    </p>
+
+                </div>
+
+
+                <div class="letter"
+                    onclick="openLetter(3)">
+
+                    💌
+
+                    <p>
+                        When You Feel Sad
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="navigation-buttons">
+
+                <button class="back-btn"
+                    onclick="nextPage(5)">
+
+                    ← Back
+
+                </button>
+
+                <button class="main-btn"
+                    onclick="nextPage(7)">
+
+                    One Last Surprise 💚
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PAGE 6 : FINAL SURPRISE -->
+
+    <section class="page" id="page7">
+
+        <div class="final-content">
+
+            <p class="small-title">
+                THE FINAL CHAPTER 💚
+            </p>
+
+            <div class="big-heart">
+                💚
+            </div>
+
+            <h2>
+                This Website Was Made
+                <span>Only For You.</span>
+            </h2>
+
+            <p>
+                No matter how many websites exist
+                on the internet, this one will always
+                have only one person as its reason.
+            </p>
+
+
+            <!-- FINAL PHOTO -->
+
+            <div class="final-photo">
+
+                <!-- PUT YOUR BEST PHOTO HERE -->
+
+                <img src="photo5.jpeg"
+                    alt="Our Favourite Memory">
+
+            </div>
+
+
+            <h3>
+                F. Bhibisha Jasmine 💚
+            </h3>
+
+            <p class="final-message">
+
+                Thank you for being part of my life.
+                Thank you for every smile,
+                every memory and every moment.
+
+                <br><br>
+
+                This is just a small surprise,
+                but it is made with a lot of love. 💚
+
+            </p>
+
+
+            <button class="main-btn"
+                onclick="showFinalMessage()">
+
+                Click For One Last Message 💚
+
+            </button>
+
+
+            <p id="lastMessage"
+                class="hidden final-love">
+
+                💚 I Love You, Bhibisha Jasmine 💚
+
+            </p>
+
+
+            <button class="back-btn final-back"
+                onclick="nextPage(1)">
+
+                ↻ Start Again
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- LETTER POPUP -->
+
+    <div id="letterPopup"
+        class="popup hidden">
+
+        <div class="popup-box">
+
+            <button class="close-btn"
+                onclick="closeLetter()">
+
+                ×
+
+            </button>
+
+            <div class="popup-heart">
+                💌
+            </div>
+
+            <h2 id="letterTitle"></h2>
+
+            <p id="letterMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    
+
+</body>
+
+</html>
+
